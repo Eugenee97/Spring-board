@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>게시물 목록</title>
 </head>
 <body>
@@ -30,9 +30,10 @@
 				<td>${list.viewCnt}</td>
 			</tr>
 		</c:forEach>
-		
-	</tbody>
 	
+	</tbody>
+
 </table>
+
 </body>
 </html>
