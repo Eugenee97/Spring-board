@@ -8,7 +8,13 @@
 	<select id="list" resultType="com.board.domain.BoardVO">
 		select
 			bno, title, content, writer, regDate, viewCnt
-		from board.tbl_board
+		from tbl_board
 	</select>
-
+	
+	<!-- 게시물 작성 -->
+	<insert id="write" parameterType="com.board.domain.BoardVO">
+		insert into
+			tbl_board(title, content, writer)
+				values(#{title}, #{content}, #{writer})
+	</insert>
 </mapper>
