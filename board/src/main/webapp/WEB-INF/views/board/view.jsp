@@ -7,7 +7,9 @@
 <title>게시물 조회</title>
 </head>
 <body>
-
+<div id="nav">
+ <%@ include file="../menu/nav.jsp" %>
+</div>
 <label>제목</label>
 ${view.title}<br />
 
@@ -16,6 +18,10 @@ ${view.writer}<br />
 
 <label>내용</label><br />
 ${view.content}<br />
+
+<div>
+<a href="/board/modify?bno=${view.bno}">게시물 수정</a>
+</div>
 
 </body>
 </html>
