@@ -28,4 +28,10 @@ public class BoardServiceImpl implements BoardService {
 		dao.write(vo);
 	}
 
+	@Override
+	public BoardVO view(int bno) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.view(bno);
+	}
+
 }
