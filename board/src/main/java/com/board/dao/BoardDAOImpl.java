@@ -44,4 +44,10 @@ public class BoardDAOImpl implements BoardDAO {
 		// TODO Auto-generated method stub
 		sql.update(namespace+"modify",vo);
 	}
+
+	@Override
+	public void delete(int bno) throws Exception {
+		// TODO Auto-generated method stub
+		sql.delete(namespace+".delete",bno);
+	}
 }

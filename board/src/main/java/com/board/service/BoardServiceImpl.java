@@ -41,4 +41,10 @@ public class BoardServiceImpl implements BoardService {
 		dao.modify(vo);
 	}
 
+	@Override
+	public void delete(int bno) throws Exception {
+		// TODO Auto-generated method stub
+		dao.delete(bno);
+	}
+
 }
